@@ -97,12 +97,10 @@ pip install -r requirements.txt
 data/raw/
 ```
 
-4. **Run preprocessing and analysis notebooks**
-   Execute the notebooks in order:
+4. **Run preprocessing and analysis notebook**
+   Execute the notebooks:
 
-* `notebooks/preprocessing.ipynb`
-* `notebooks/analysis.ipynb`
-* `notebooks/visualization.ipynb`
+* `notebooks/tratamento_artigos.ipynb`
 
 5. **(Optional) Run Biblioshiny**
 
