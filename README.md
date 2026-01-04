@@ -26,6 +26,42 @@ The analyses follow **PRISMA guidelines** and rely on data collected from **Scop
 
 ---
 
+## 📂 Repository Structure
+
+```text
+qnlp-scientometrics/
+├── LICENSE
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── raw/                          # Raw bibliographic data (Scopus and Web of Science)
+│   │   ├── scopus_base.csv
+│   │   └── wos_base.xls
+│   │
+│   ├── processed/                    # Intermediate datasets after filtering and normalization
+│   │   ├── filtereds_merged.xlsx
+│   │   ├── merged_exported_scopus_mapped.xlsx
+│   │   ├── scopus_filtered.csv
+│   │   ├── wos_filtered.csv
+│   │   └── selection.csv
+│   │
+│   ├── ready/                        # Final dataset used in the scientometric analysis
+│   │   └── final_dataset_merged.csv
+│   │
+│   └── controlled_vocabulary/        # Controlled vocabulary for keyword normalization
+│       ├── tesauro.csv               # Thesaurus for term equivalence and normalization
+│       └── words_remove.txt          # Domain-specific stoplist for keyword filtering
+│
+└── src/
+    ├── bibliometrix_analysis.R        # Bibliometric and thematic analysis (Bibliometrix/Biblioshiny)
+    │
+    └── notebooks/
+        └── tratamento_artigos.ipynb  # Data preprocessing
+
+```
+---
+
 ## 🔧 Tools and Technologies
 
 The study combines **Python-based data processing** with **specialized bibliometric tools**:
